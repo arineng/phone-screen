@@ -6,7 +6,7 @@ import com.google.common.collect.Collections2;
 import java.util.List;
 
 public abstract class AbstractCompositeWidget implements CompositeWidget {
-   List<Widget> components;
+   private List<Widget> components;
 
    @Override
    public List<Widget> getComponents() {

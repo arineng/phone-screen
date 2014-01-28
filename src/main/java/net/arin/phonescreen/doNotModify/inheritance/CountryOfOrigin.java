@@ -7,5 +7,6 @@ public enum CountryOfOrigin {
    CHINA,
    JAPAN,
    GERMANY,
-   FRANCE
+   FRANCE,
+   COMPOSITE
 }

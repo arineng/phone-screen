@@ -5,10 +5,18 @@ import com.google.common.collect.Collections2;
 
 public abstract class AbstractCompositeWidget implements CompositeWidget {
    /**
+    * CompositeWidget doesn't really have a single country of origin.
+    */
+   @Override
+   public final CountryOfOrigin getCountryOfOrigin() {
+      return CountryOfOrigin.COMPOSITE;
+   }
+
+   /**
     * The composite widget is "made in" North America if at least one component is
     */
    @Override
-   public boolean isMadeInNorthAmerica() {
+   public final boolean isMadeInNorthAmerica() {
       return Collections2.filter(getComponents(), new Predicate<Widget>() {
          @Override
          public boolean apply(Widget widget) {
@@ -21,7 +29,7 @@ public abstract class AbstractCompositeWidget implements CompositeWidget {
     * The composite widget is "made in" Europe if at least one component is
     */
    @Override
-   public boolean isMadeInEurope() {
+   public final boolean isMadeInEurope() {
       return Collections2.filter(getComponents(), new Predicate<Widget>() {
          @Override
          public boolean apply(Widget widget) {
@@ -34,7 +42,7 @@ public abstract class AbstractCompositeWidget implements CompositeWidget {
     * The composite widget is "made in" Asia if at least one component is
     */
    @Override
-   public boolean isMadeInAsia() {
+   public final boolean isMadeInAsia() {
       return Collections2.filter(getComponents(), new Predicate<Widget>() {
          @Override
          public boolean apply(Widget widget) {

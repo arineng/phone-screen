@@ -1,12 +1,10 @@
-package net.arin.phonescreen.exercises;
+package net.arin.phonescreen.exercises.equality;
 
-import net.arin.phonescreen.doNotModify.Pair;
-import net.arin.phonescreen.doNotModify.SomeBean;
+import net.arin.phonescreen.doNotModify.equality.Pair;
+import net.arin.phonescreen.doNotModify.equality.SomeBean;
 
 public class SomeBeanFactory {
-   private static SomeBeanFactory factory = new SomeBeanFactory();
-
-   private SomeBeanFactory(){};
+   private SomeBeanFactory(){}
 
    public static Pair<SomeBean, SomeBean> getBeansForEqualityShenanigans(){
       //TODO: Exercise 1:

@@ -1,10 +1,13 @@
-package net.arin.phonescreen.doNotModify;
+package net.arin.phonescreen.doNotModify.equality;
 
-import net.arin.phonescreen.exercises.SomeBeanFactory;
+import net.arin.phonescreen.exercises.equality.SomeBeanFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+/**
+ * Testing knowledge of equality in Java
+ */
 public class SomeBeanEqualityShenanigansTest {
    private SomeBean a;
    private SomeBean b;

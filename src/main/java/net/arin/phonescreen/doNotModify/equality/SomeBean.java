@@ -1,4 +1,4 @@
-package net.arin.phonescreen.doNotModify;
+package net.arin.phonescreen.doNotModify.equality;
 
 public class SomeBean {
    String propertyA;

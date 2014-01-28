@@ -8,7 +8,12 @@ Make the modifications requested so that all tests in the SomeBeanEqualityTest c
 
 For the second exercise, look at the code in the  net.arin.phonescreen.exercises.inheritance package marked:
 "TODO: Exercise 2".
+Note: Multiple files are marked for Exercise 2.
 Make the modifications requested so that all tests in the InheritanceTest class pass.
+
+Notes for all exercises:
+1) Modify *only* classes in the "net.arin.phonescreen.exercises.*" packages.
+2) You shouldn't have to create any new classes. Feel free to do so, however.
 
 Assuming you have maven installed, run the tests from the project root directory by typing:
 mvn clean test

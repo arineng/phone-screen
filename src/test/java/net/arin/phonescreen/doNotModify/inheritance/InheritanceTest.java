@@ -1,14 +1,14 @@
-package net.arin.phonescreen.doNotModify.inheritence;
+package net.arin.phonescreen.doNotModify.inheritance;
 
-import net.arin.phonescreen.exercises.inheritence.CanadianWidget;
-import net.arin.phonescreen.exercises.inheritence.GermanWidget;
-import net.arin.phonescreen.exercises.inheritence.JapaneseWidget;
-import net.arin.phonescreen.exercises.inheritence.WidgetFactory;
+import net.arin.phonescreen.exercises.inheritance.CanadianWidget;
+import net.arin.phonescreen.exercises.inheritance.GermanWidget;
+import net.arin.phonescreen.exercises.inheritance.JapaneseWidget;
+import net.arin.phonescreen.exercises.inheritance.WidgetFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class InheritenceTest {
+public class InheritanceTest {
    private CompositeWidget northAmericanAndEuropean;
    private CompositeWidget asianAndNorthAmerican;
 

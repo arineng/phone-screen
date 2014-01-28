@@ -1,4 +1,4 @@
-package net.arin.phonescreen.doNotModify.inheritence;
+package net.arin.phonescreen.doNotModify.inheritance;
 
 public enum CountryOfOrigin {
    USA,

@@ -1,4 +1,4 @@
-package net.arin.phonescreen.doNotModify.inheritence;
+package net.arin.phonescreen.doNotModify.inheritance;
 
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;

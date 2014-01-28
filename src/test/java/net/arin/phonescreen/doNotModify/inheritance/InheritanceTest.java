@@ -48,7 +48,7 @@ public class InheritanceTest {
             "You're working too hard. If you extend the right class, a lot of work will be done for you."
       );
 
-      for(Widget w : northAmericanAndEuropean.getComponents()){
+      for(Widget w : asianAndNorthAmerican.getComponents()){
          Assert.assertTrue(
                w instanceof AbstractWidget,
                "You're working too hard. If you extend the right class, a lot of work will be done for you."

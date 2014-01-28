@@ -1,16 +1,12 @@
-The goal of this exercise is to get all four tests to pass modifying only code in the
-net.arin.phonescreen.exercises package.
+The goal of this exercise is to get all four tests to pass modifying only code in the net.arin.phonescreen.exercises package.
 
-The first exercise tests knowledge of equality in Java. The second tests knowledge of
-class and interface inheritance.
+The first exercise tests knowledge of equality in Java. The second tests knowledge of class and interface inheritance.
 
-For the first exercise, look at the code in the  net.arin.phonescreen.exercises.equality package
-marked:
+For the first exercise, look at the code in the  net.arin.phonescreen.exercises.equality package marked:
 "TODO: Exercise 1".
 Make the modifications requested so that all tests in the SomeBeanEqualityShenanigansTest class pass.
 
-For the second exercise, look at the code in the  net.arin.phonescreen.exercises.inheritance package
-marked:
+For the second exercise, look at the code in the  net.arin.phonescreen.exercises.inheritance package marked:
 "TODO: Exercise 2".
 Make the modifications requested so that all tests in the InheritanceTest class pass.
 
@@ -19,5 +15,4 @@ mvn clean test
 
 You'll need an internet connection the first time so that maven can download dependencies.
 
-You'll also need Java 1.6 or better to run this code. I believe it will work with a small change on Java 1.5.
-Bonus points if you can tell me what that change is.
+You'll also need Java 1.6 or better to run this code. I believe it will work with a small change on Java 1.5. Bonus points if you can tell me what that change is.

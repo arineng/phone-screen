@@ -3,7 +3,20 @@ package net.arin.phonescreen.doNotModify.inheritance;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
 
+import java.util.List;
+
 public abstract class AbstractCompositeWidget implements CompositeWidget {
+   List<Widget> components;
+
+   @Override
+   public List<Widget> getComponents() {
+      return components;
+   }
+
+   public void setComponents(List<Widget> components) {
+      this.components = components;
+   }
+
    /**
     * CompositeWidget doesn't really have a single country of origin.
     */

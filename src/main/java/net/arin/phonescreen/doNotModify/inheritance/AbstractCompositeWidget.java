@@ -3,10 +3,11 @@ package net.arin.phonescreen.doNotModify.inheritance;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class AbstractCompositeWidget implements CompositeWidget {
-   private List<Widget> components;
+   private List<Widget> components = new ArrayList<Widget>();
 
    @Override
    public List<Widget> getComponents() {

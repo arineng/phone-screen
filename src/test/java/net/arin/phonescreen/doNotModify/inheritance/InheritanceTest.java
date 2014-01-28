@@ -19,46 +19,74 @@ public class InheritanceTest {
    }
 
    @Test
-   public void testFirstWidget() {
-      //Making sure you followed directions
+   public void testNorthAmericanAndEuropeanExtendsAbstractHelperClass() {
       Assert.assertTrue(
             northAmericanAndEuropean instanceof AbstractCompositeWidget,
             "You're working too hard. If you extend the right class, a lot of work will be done for you."
       );
+   }
 
+   @Test
+   public void testNorthAmericanAndEuropeanComponentsExtendAbstractHelperClass(){
       for(Widget w : northAmericanAndEuropean.getComponents()){
          Assert.assertTrue(
                w instanceof AbstractWidget,
                "You're working too hard. If you extend the right class, a lot of work will be done for you."
          );
+      }
+   }
+
+   @Test
+   public void testNorthAmericanAndEuropeanComponentsImplementedViaIntendedClasses(){
+      for(Widget w : northAmericanAndEuropean.getComponents()){
          Assert.assertTrue(w instanceof CanadianWidget || w instanceof GermanWidget);
       }
+   }
 
-      //Testing your class
+   @Test
+   public void testNorthAmericanAndEuropeanMadeInCorrectPlaces(){
       Assert.assertTrue(northAmericanAndEuropean.isMadeInNorthAmerica());
       Assert.assertTrue(northAmericanAndEuropean.isMadeInEurope());
+   }
+
+   @Test
+   public void testNorthAmericanAndEuropeanNotMadeInOtherPlaces(){
       Assert.assertFalse(northAmericanAndEuropean.isMadeInAsia());
    }
 
    @Test
-   public void testSecondWidget() {
-      //Making sure you followed directions
+   public void testAsianAndNorthAmericanExtendsAbstractHelperClass() {
       Assert.assertTrue(
             asianAndNorthAmerican instanceof AbstractCompositeWidget,
             "You're working too hard. If you extend the right class, a lot of work will be done for you."
       );
+   }
 
+   @Test
+   public void testAsianAndNorthAmericanComponentsExtendAbstractHelperClass(){
       for(Widget w : asianAndNorthAmerican.getComponents()){
          Assert.assertTrue(
                w instanceof AbstractWidget,
                "You're working too hard. If you extend the right class, a lot of work will be done for you."
          );
+      }
+   }
+
+   @Test
+   public void testAsianAndNorthAmericanComponentsImplementedViaIntendedClasses(){
+      for(Widget w : asianAndNorthAmerican.getComponents()){
          Assert.assertTrue(w instanceof CanadianWidget || w instanceof JapaneseWidget);
       }
+   }
 
-      //Testing your class
+   @Test
+   public void testAsianAndNorthAmericanMadeInCorrectPlaces(){
       Assert.assertTrue(asianAndNorthAmerican.isMadeInNorthAmerica());
       Assert.assertTrue(asianAndNorthAmerican.isMadeInAsia());
+   }
+
+   @Test
+   public void testAsianAndNorthAmericanNotMadeInOtherPlaces(){
       Assert.assertFalse(asianAndNorthAmerican.isMadeInEurope());
    }
 }
